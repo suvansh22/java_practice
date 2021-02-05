@@ -10,6 +10,10 @@ class A implements Test{
 class TestSubject{
 	pucblic static void main(String args[]){
 		A obj = new A();
-		A.print();
+		Test obj2 = new A();
+		//Test obj3 = new Test() will give compiler error as all methods are abstract and thier are static variables
+		obj.print();
+		obj2.print();
+		obj
 		}
 	}
